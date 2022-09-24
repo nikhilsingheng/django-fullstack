@@ -1,0 +1,15 @@
+{% include 'base.html' %}
+{% block content %}
+<form  method="POST">{% csrf_token %}
+  {{form}}
+<button>Submit</button>
+</form>
+{% if form.errors %}
+<div class="error">
+  {{form.errors.title.as_text}}
+</div>
+{% endif %}
+<a href="{% url 'node.list' %}">
+<button>Cancel</button>
+  </a>
+{% endblock  %}

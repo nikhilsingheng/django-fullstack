@@ -1,0 +1,45 @@
+.data{
+    color: red;
+}
+.data1{
+    color: black;
+}
+h1,h2,h3,p{
+    text-align: center;
+}
+.button{
+      text-align: center;
+    justify-content: center;
+
+
+}
+
+.btn1{
+     /*border-radius:10px;*/
+    background: #4ac1f7;
+}
+.detail{
+    display: flex;
+    /*text-align: center;*/
+    justify-content: space-around;
+}
+
+ul.errorlist{
+    display: none;
+}
+
+.error{
+    background: red;
+    color: black;
+    width: 200px;
+    padding: 20px 20px;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-between;*/
+}
+
+.button{
+    text-align: center !important;
+}

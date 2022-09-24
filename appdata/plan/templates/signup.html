@@ -1,0 +1,6 @@
+{% include 'base.html' %} {% block content %}
+<form method="post" class="text-align:left">
+  {% csrf_token %} {{ form.as_p}}
+  <input type="submit" name="Submit" class="btn btn-primary" />
+</form>
+{% endblock %}

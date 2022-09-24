@@ -1,0 +1,9 @@
+{% include 'base.html' %} {% block content %}
+<h1>Welcome to Note</h1>
+<p>hello {{today}}</p>
+<div class="button">
+  <a href="{% url 'node.list'%}"
+    ><button class="btn1 btn-primary">Checkout</button></a
+  >
+</div>
+{% endblock %}

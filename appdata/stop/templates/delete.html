@@ -1,0 +1,7 @@
+{% include 'base.html' %}
+{% block content %}
+ <form  method="POST">{% csrf_token %}
+  <p>Are you want to delete "{{note.title}}"</p>
+  <input type="submit" value="Confirm">
+</form>
+{% endblock  %}

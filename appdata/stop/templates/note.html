@@ -1,0 +1,21 @@
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">-->
+<!--</head>-->
+<!--<body>-->
+{% include 'base.html' %}
+{% block content %}
+   <h1 class="data">this is blog</h1>
+   <div class="detail">
+    {% for  note in notes %}
+       <a href="{% url 'note.detail' pk=note.id %}"><h3 class="data1">{{note.title}}</h3></a>
+      {{note.text|truncatechars:5}}
+       {% endfor %}
+   </div>
+{% endblock  %}
+<!--</body>-->
+<!--</html>-->
